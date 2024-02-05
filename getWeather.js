@@ -56,43 +56,7 @@ async function getWeather(city){
             alert('Введите город')
         }
 }
-
-// button.onclick=async function(e){
-//         e.preventDefault(); //Отмена перезагрузки окна после отправки данных
-     
-
-//         var inputCity=document.getElementById("inputCity")
-
-//         const city=inputCity.value.trim();
-    
-//         console.log(city);
-
-//         if(city!==''){
-//             try{
-//                 var DataAboutWeather=await getResponse(url=URLrequest,params={
-//                     q: city,
-//                     lang:'ru',
-//                     appid: apiKey
-//                 })
-    
-//                 if (DataAboutWeather==false){
-//                     console.log('Ошибка запроса')
-//                     inputCity.value='';
-//                 }
-//                 else{
-//                     inputCity.value='';
-//                     convertDataToHTML(DataAboutWeather)
-//                 }
-//             }
-//             catch(error){
-//                 console.log(error);
-//             }
-//         }
-//         else{
-//             alert('Введите город')
-//         }
-//       }
-    
+ 
 async function getResponse(url='',params={}){
 
         //Приведение ключ-значение к виду 'ключ=значение'
