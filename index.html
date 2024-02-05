@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Прогноз погоды</title>
+  <script src="show.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+      <h1 class="title"> ПРОГНОЗ ПОГОДЫ</h1>
+
+      <form class="form" id="form">
+        <input  class="input" type="text" placeholder="Введите название города">
+        <button class="btn">Показать</button>
+      </form>
+
+  </header>
+
+<div class="cards">
+
+  <div class="card">
+
+    <h2 class="card-city">Ekaterinburg</h2>
+
+    <div class="card-weather">
+      <img class="card-img" src="./img/clear.svg" alt="Weather">
+      
+      <div class="card-value"> -19°C</div>
+
+    </div>
+
+   <div class="card-description">Ясно</div>
+
+   <div class="button-more" onclick="showMoreInfo(this)">
+      Подробнее
+  </div>
+
+  </div>
+    <div class="more-info">
+        <table class="iksweb">
+          <tbody>
+            <tr>
+              <td>Ощущается</td>
+              <td>Давление</td>
+            </tr>
+            <tr>
+              <td><img src="./img/term.png" alt=""></td>
+              <td><img src="./img/pressure.png" alt=""></td>
+            </tr>
+            <tr>
+              <td><div class="feel">-20С</div></td>
+              <td><div class="pressure"> 749 мм рт.ст.</div></td>
+            </tr>
+            <tr>
+              <td></div>Влажность</td>
+              <td>Ветер</td>
+            </tr>
+            <tr>
+              <td><img src="./img/humidity.png" alt=""></td>
+              <td><img src="./img/wind.png" alt=""></td>
+            </tr>
+            <tr>
+              <td><div class="humidity">78%</div></td>
+              <td><div class="wind">9 м/с</div></td>
+            </tr>
+          </tbody>
+        </table>
+
+  </div>
+
+</div>
+  
+  <script src="main.js"></script> 
+
+</body>
+</html>
