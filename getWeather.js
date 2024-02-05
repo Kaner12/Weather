@@ -5,16 +5,17 @@ const apiKey='5da6274e7005b9e9a68b662f1c55d5e3';
 document.addEventListener('click', function (e) {
 
     e.preventDefault();//Отмена перезагрузки окна после отправки данных
+
     // Проверка, был ли клик по кнопке с классом 'btn'
     if (e.target.classList.contains('btn')) {
 
-      // Нахождение ближайшей формы относительно кнопки
-      const form = e.target.closest('.form');
-      console.log(form);
+        // Получить родительский класс кнопки
+        form = e.target.parentNode;
 
-      card=e.target.closest('.card-container');
-      console.log(card)
-      // Если форма найдена, получить значение поля ввода
+        // Получить родительский класс формы
+        card = form.parentNode;
+        
+      //Если форма найдена, получить значение поля ввода
       if (form) {
         const inputCity = form.querySelector('.input');
         const city = inputCity.value.trim();
@@ -24,6 +25,7 @@ document.addEventListener('click', function (e) {
   });
 
 async function getWeather(city){
+
     if(city!==''){
         try{
             var DataAboutWeather=await getResponse(url=URLrequest,params={
@@ -34,17 +36,13 @@ async function getWeather(city){
 
             if (DataAboutWeather==false){
                 console.log('Ошибка запроса')
-                inputCity=form.querySelectorAll('.input')
-                inputCity.value=''
-                //inputCity.forEach(input => {input.value=''})
+                inputCity = form.querySelector('.input');
+                inputCity.value="";
                 }
             
             else{
-                //inputCity=document.querySelectorAll('input')
-                //inputCity.forEach(input => {input.value=''
-                //});
-                //inputCity=form.querySelectorAll('input')
-                inputCity.value=""
+                inputCity = form.querySelector('.input');
+                inputCity.value="";
                 convertDataToHTML(DataAboutWeather,card)
             }
         }
