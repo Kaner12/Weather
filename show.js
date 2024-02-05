@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     
     function showMoreInfo(button) {
-      var card = button.closest('.cards');
+      var card = button.closest('.card-container');
       var moreInfo = card.querySelector('.more-info');
       card.classList.toggle('show-more-info');
       moreInfo.classList.toggle('show');

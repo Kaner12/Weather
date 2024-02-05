@@ -5,7 +5,8 @@ const apiKey='5da6274e7005b9e9a68b662f1c55d5e3'
 let city
 
  button.onclick=async function(e){  //асинхронная функция возвращает промис
-
+  
+  debugger
   e.preventDefault(); // Отменяет перезагрузку страницы при отправке
 
   city=input.value.trim(); // Получение значения из поля ввода, обрезая пробелы по краям
