@@ -1,7 +1,4 @@
 
-const URLrequest='https://api.openweathermap.org/data/2.5/weather';
-const apiKey='5da6274e7005b9e9a68b662f1c55d5e3';
-
 document.addEventListener('click', function (e) {
 
     e.preventDefault();//Отмена перезагрузки окна после отправки данных
@@ -25,6 +22,9 @@ document.addEventListener('click', function (e) {
   });
 
 async function getWeather(city){
+
+    const URLrequest='https://api.openweathermap.org/data/2.5/weather';
+    const apiKey='5da6274e7005b9e9a68b662f1c55d5e3';
 
     if(city!==''){
         try{
@@ -85,6 +85,5 @@ async function getResponse(url='',params={}){
         catch(error){
             console.log(error);
             return response.ok;
-        }       
-        
+        }            
 }

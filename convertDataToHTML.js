@@ -14,8 +14,8 @@ async function convertDataToHTML(content,card){
 
 async function updateBackground(weatherDescription,card) {
     
-    const img = card.querySelector('.card-img');
-    
+    const img = card.querySelector('.card-img')
+
     if (weatherDescription.includes('Rain') ) 
     {
       card.style.background = 'linear-gradient(rgb(100, 100, 100), rgb(50, 50, 50)) no-repeat';
