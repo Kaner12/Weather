@@ -16,31 +16,31 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 30px;
+    padding: 2%;
     font-size: 1.7rem;
     color: white;
 }
 
 .title{
-  margin-top: 5px;
+  margin-top: 2%;
 }
 
 .form{
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  height: 5vh;
   background-color: none;
   padding: 1.5rem;
   width: 50%;
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .input{
   font-family: 'Montserrat', bold;
   font-size: 17px;
   color: black;
-  padding: 15px;
+  padding: 1rem;
   width: 100%;
   -webkit-border-top-left-radius: 20px;
   -webkit-border-bottom-left-radius: 20px;
@@ -49,12 +49,12 @@ body {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   border-style: none;
+  outline:none;
 }
 
 .btn{
   font-family: 'Montserrat', bold;
-  font-size: 20px;
-  width:auto;
+  width:15%;
   -webkit-border-top-right-radius: 20px;
   -webkit-border-bottom-right-radius: 20px;
   -moz-border-radius-topright: 20px;
@@ -63,7 +63,11 @@ body {
   border-bottom-right-radius: 20px;
   border-style: none;
   background: rgba(255, 255, 255,0.5);
-  mix-blend-mode: screen;
+}
+
+.btn img{
+  width: 60%;
+  height: 60%;
 }
 
 /*Card*/
@@ -124,6 +128,7 @@ body {
   text-align: center;
   font-size: 2.5rem;
   color: rgb(255, 255, 255);
+  overflow-wrap:break-word;
 }
 
 .button-more{
@@ -145,12 +150,14 @@ body {
 .more-info{
   margin-left: auto;
   margin-right: auto;
-    width: 600px;
-    border-radius: 30px;
-    background: rgba(255, 255, 255,0.2);
-    box-shadow: 0px 6px 6px 7px rgba(0, 0, 0, 0.25);
-    display:none;
-    opacity: 1;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 80%;
+  border-radius: 30px;
+  background: rgba(255, 255, 255,0.2);
+  box-shadow: 0px 6px 6px 7px rgba(0, 0, 0, 0.25);
+  display:none;
+  opacity: 1;
 }
 
 table.iksweb{
